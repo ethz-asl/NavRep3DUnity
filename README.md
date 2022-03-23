@@ -11,7 +11,12 @@ This is the Unity project used to build the *simple*, *city*, and *office* scena
 
 ## Installing Unity on Ubuntu
 
-[See here.](https://github.com/danieldugas/NavDreamsUnity#installing-unity-on-ubuntu)
+- Download Unity Hub from [here](https://unity3d.com/get-unity/download), [direct link](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage)
+- From the [unity archive](https://unity3d.com/get-unity/download/archive), Find the version you want, right click the green button "Unity Hub", and copy the link. Then, open the link in unity hub like so:
+```
+chmod +x ~/Downloads/UnityHub.AppImage
+~/Downloads/UnityHub.AppImage unityhub://2020.1.3f1/cf5c4788e1d8
+```
 
 ## Opening The Project
 
