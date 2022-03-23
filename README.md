@@ -1,4 +1,4 @@
-## Documentation 
+# NavRep3DUnity
 
 This is the Unity project used to build the *simple*, *city*, and *office* scenarios for the NavDreams reinforcement-learning paper.
 
