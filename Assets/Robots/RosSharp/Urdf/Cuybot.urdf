@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="Cuybot">
+  <material name="Default-Material">
+    <color rgba="1 1 1 1" />
+  </material>
+  <material name="Default-Diffuse">
+    <color rgba="1 1 1 0.5" />
+  </material>
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.001882 -0.025814 0.308298" />
+      <mass value="1" />
+      <inertia ixx="0.0837742984294891" ixy="-8.47628398332745E-05" ixz="9.22621329664253E-05" iyy="0.0773460119962692" iyz="0.0108890077099204" izz="0.0405166447162628" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/Narko2.STL" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/Narko2.STL" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scene meshName="Hangar">
+    <Position x="-0" y="0" z="0" />
+    <Rotation x="0" y="0" z="0" />
+    <recordingFile>Output_{USER}_{ITT}.csv</recordingFile>
+    <endingConditions>
+      <condition parameter="time" test="greater" value="60" />
+    </endingConditions>
+  </scene>
+  <player>
+    <TrialCamPlayer mesh="CamPlayer" radius="0.33" in_sim="false">
+      <Position x="-17.85" y="17.04" z="8.110001" />
+      <Rotation x="0" y="0" z="190.802734" />
+      <controlLaw>
+        <LawCamControlEditor lookSpeedH="2" lookSpeedV="2" zoomSpeed="2" dragSpeed="3" />
+      </controlLaw>
+    </TrialCamPlayer>
+  </player>
+  <robots>
+    <robot>
+      <TrialRegularRobot mesh="Cuybot_with_sensors" radius="1">
+        <Position x="-0" y="0" z="0.01" />
+        <Rotation x="0" y="0" z="0" />
+        <controlLaw>
+          <LawFake />
+        </controlLaw>
+      </TrialRegularRobot>
+    </robot>
+  </robots>
+  <agents>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="6" animationOffset="0.231219769" heightOffset="0.04586265">
+        <Position x="-1.484395" y="-7.49597645" z="0.02" />
+        <Rotation x="-0" y="0" z="238.088959" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.30167484" accelerationMax="0.6115926" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="3.65775585" y="-0.05359173" z="0.01" />
+              <Goal x="3.13092232" y="-0.6060767" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <VOGConfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2">
+            <group groupID="-1" useFormation="true" neighbourNum="2" neighbourDist="1" neighbourDetectionDist="80" horizonTime="2" weightPrefVel="0.15" weightGroup="0.2" />
+          </VOGConfig>
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="1" animationOffset="0.828815937" heightOffset="-0.008128494">
+        <Position x="13.8124113" y="-6.52328873" z="0.02" />
+        <Rotation x="0" y="-0" z="61.985424" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.31559587" accelerationMax="0.8204204" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2.65004134" y="-5.289126" z="0.01" />
+              <Goal x="5.20066643" y="-2.80304718" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <VOGConfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2">
+            <group groupID="-1" useFormation="true" neighbourNum="2" neighbourDist="1" neighbourDetectionDist="80" horizonTime="2" weightPrefVel="0.15" weightGroup="0.2" />
+          </VOGConfig>
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+  </agents>
+  <obstacles />
+</Trial>

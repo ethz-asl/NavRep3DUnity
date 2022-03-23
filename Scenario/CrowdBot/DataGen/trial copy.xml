@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scene meshName="Plane">
+    <Position x="-0" y="0" z="0" />
+    <Rotation x="0" y="0" z="0" />
+    <recordingFile>Output_{USER}_{ITT}.csv</recordingFile>
+    <endingConditions>
+      <condition parameter="time" test="greater" value="60" />
+    </endingConditions>
+  </scene>
+  <player>
+    <TrialRegularPlayer mesh="RegPlayer" radius="0.33">
+      <Position x="-0" y="-415" z="0.01" />
+      <Rotation x="0" y="0" z="0" />
+      <controlLaw>
+        <LawCamControlEditor />
+      </controlLaw>
+    </TrialRegularPlayer>
+  </player>
+  <robots>
+    <robot>
+      <TrialRegularRobot radius="1">
+        <Position x="-0" y="-415" z="0.01" />
+        <Rotation x="0" y="0" z="0" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.1" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-0" y="-500" z="0" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+      </TrialRegularRobot>
+    </robot>
+  </robots>
+  <agents>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="5" animationOffset="0.561806858" heightOffset="-0.007235009">
+        <Position x="4.5746417" y="-423.91272" z="0.01" />
+        <Rotation x="0" y="-0" z="34.3405151" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.47315371" accelerationMax="0.7683079" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="3.50057626" y="64.4682846" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+  </agents>
+</Trial>

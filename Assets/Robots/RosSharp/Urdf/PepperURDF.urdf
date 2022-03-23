@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="PepperURDF">
+  <material name="shiny_white.002_shiny_white.003Mat">
+    <color rgba="0.8 0.8 0.8 1" />
+  </material>
+  <material name="milky_white.003Mat">
+    <color rgba="0.8 0.8 0.8 1" />
+  </material>
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.042427 9E-06 0.109705" />
+      <mass value="15.4854001999" />
+      <inertia ixx="0.223077595233917" ixy="-7.16836211722693E-06" ixz="0.00470519391819835" iyy="0.210291966795921" iyz="-2.31174590226146E-06" izz="0.270212113857269" />
+    </inertial>
+    <visual>
+      <origin xyz="0.241542 -0.259385 0" />
+      <geometry>
+        <mesh filename="package://meshes/base.stl" scale="1 1 1" />
+      </geometry>
+      <material name="shiny_white.002_shiny_white.003Mat" />
+    </visual>
+  </link>
+  <link name="knee">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.201083 0.258941 0.30578" />
+      <mass value="0.1000000015" />
+      <inertia ixx="0.000284576788544655" ixy="9.31322796660083E-10" ixz="4.67275607096695E-10" iyy="0.000171192921698093" iyz="-2.79396372704355E-09" izz="0.00028457585722208" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/milky_white.003.stl" scale="1 1 1" />
+      </geometry>
+      <material name="milky_white.003Mat" />
+    </visual>
+  </link>
+  <joint name="base_link_knee_joint" type="revolute">
+    <origin xyz="0.241542 -0.259385 0" />
+    <parent link="base_link" />
+    <child link="knee" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.523599" upper="0.523599" effort="1000" velocity="1000" />
+  </joint>
+</robot>

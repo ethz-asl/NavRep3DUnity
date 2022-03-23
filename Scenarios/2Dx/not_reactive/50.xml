@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scene meshName="ChallengeCorridorCrossing">
+    <Position x="-0" y="0" z="0" />
+    <Rotation x="0" y="0" z="0" />
+    <recordingFile>Output_{USER}_{ITT}.csv</recordingFile>
+    <endingConditions>
+      <condition parameter="time" test="less" value="0" />
+    </endingConditions>
+  </scene>
+  <player>
+    <TrialCamPlayer mesh="CamPlayer" radius="0.33" in_sim="false">
+      <Position x="-16.1" y="-9.58" z="9.96" />
+      <Rotation x="-42.6957855" y="8.71239649E-07" z="354.059143" />
+      <controlLaw>
+        <LawCamControlEditor lookSpeedH="2" lookSpeedV="2" zoomSpeed="2" dragSpeed="3" />
+      </controlLaw>
+    </TrialCamPlayer>
+  </player>
+  <robots>
+    <robot>
+      <TrialRegularRobot mesh="turtlebot_sensors" radius="0.5" in_sim="false">
+        <Position x="-20" y="0" z="0.01" />
+        <Rotation x="0" y="-0" z="270" />
+        <controlLaw>
+          <LawFake />
+        </controlLaw>
+      </TrialRegularRobot>
+    </robot>
+  </robots>
+  <agents>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="1" animationOffset="0.34383136" heightOffset="-0.0266106743">
+        <Position x="21.914093" y="-3.33678484" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="110.995872" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.591955" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="16.569973" y="8.504348" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.51017678" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="9" animationOffset="0.22248435" heightOffset="-0.04172803">
+        <Position x="17.7973671" y="1.00082421" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="262.404541" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.51697636" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="17.3412571" y="-8.358151" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.04913521" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="3" animationOffset="0.1679101" heightOffset="0.0349737741">
+        <Position x="16.69759" y="-0.875265658" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="246.21521" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.04706061" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="24.336731" y="-7.62869358" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.34244943" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="0" animationOffset="0.7347244" heightOffset="-0.0136660393">
+        <Position x="19.0282383" y="1.38518977" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="284.506073" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.51404166" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="19.2934113" y="7.902528" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.37093329" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="3" animationOffset="0.7020253" heightOffset="-0.0299180411">
+        <Position x="17.9344254" y="2.33855629" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="197.754745" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.21315718" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="17.6570053" y="8.594651" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.55562091" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="1" animationOffset="0.255978644" heightOffset="-0.0398440473">
+        <Position x="20.602478" y="2.52290559" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="143.764328" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.16209161" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="19.343689" y="8.119112" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.49515939" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="8" animationOffset="0.7014321" heightOffset="0.00595615432">
+        <Position x="16.00447" y="3.68745637" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="179.6569" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.38866532" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="19.0449619" y="-7.815573" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.31543028" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="0" animationOffset="0.192398071" heightOffset="0.04433118">
+        <Position x="24.05549" y="-1.08009827" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="285.9781" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.56355" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="18.61029" y="8.258874" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.17549038" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="7" animationOffset="0.1173166" heightOffset="-0.0208344869">
+        <Position x="18.5347862" y="-2.932683" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="75.96488" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.23176086" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="21.1973763" y="-7.91276264" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.58020234" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="0" animationOffset="0.6152709" heightOffset="0.036347542">
+        <Position x="18.85495" y="-0.9499188" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="104.037331" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.5090934" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="17.83976" y="-8.268583" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.31129014" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="9" animationOffset="0.11722827" heightOffset="0.0302888025">
+        <Position x="14.0940685" y="0.298828155" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="249.078491" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.512095" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="6.23996544" y="7.926104" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.144759" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="9" animationOffset="0.7070434" heightOffset="0.0254163966">
+        <Position x="11.3989124" y="1.06123686" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="14.0148211" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.14434946" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="8.812641" y="8.117203" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.04065847" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="8" animationOffset="0.245752454" heightOffset="-0.026712846">
+        <Position x="10.1065264" y="1.62694514" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="151.342834" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.43918824" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="13.384161" y="-8.019683" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.34043956" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="5" animationOffset="0.3978718" heightOffset="0.022039149">
+        <Position x="7.07117271" y="-2.389659" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="212.3094" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.49656713" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="9.941515" y="8.217611" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.22371638" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="9" animationOffset="0.618024766" heightOffset="0.0490909256">
+        <Position x="8.010595" y="1.67683375" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="153.843719" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.34893394" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="11.5830278" y="8.37159252" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.31351066" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="8" animationOffset="0.467377722" heightOffset="0.026030574">
+        <Position x="11.7603474" y="-0.544438958" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="348.671722" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.44846344" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="8.859" y="8.530891" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.22755873" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="7" animationOffset="0.3113076" heightOffset="0.0127257351">
+        <Position x="8.268358" y="2.48268485" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="97.5577545" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.51326728" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="7.42745972" y="8.140994" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.61724949" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="6" animationOffset="0.0236101151" heightOffset="0.04550096">
+        <Position x="9.694145" y="-0.939608753" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="322.214661" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.2342453" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="6.77169275" y="7.803744" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.04611981" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="7" animationOffset="0.9142103" heightOffset="0.02468891">
+        <Position x="6.38612175" y="2.738411" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="297.129333" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.35214293" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="10.6464376" y="7.89269352" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.39183176" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="8" animationOffset="0.537023962" heightOffset="0.0393892638">
+        <Position x="10.6847229" y="-0.805944741" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="63.30451" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.144369" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="8.315761" y="-8.007968" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.49272323" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="2" animationOffset="0.621289432" heightOffset="0.0145270228">
+        <Position x="-2.384089" y="-2.84554529" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="57.3239555" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.2886281" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="1.59043777" y="7.99567652" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.24010968" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="8" animationOffset="0.28343457" heightOffset="0.0429253578">
+        <Position x="3.29798746" y="-3.42521787" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="265.99762" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.08648" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-4.56216574" y="-8.087691" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.447155" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="0" animationOffset="0.357603252" heightOffset="0.0487483032">
+        <Position x="-4.48587" y="-2.51445174" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="211.875214" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.31272078" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="1.63636792" y="7.830667" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.107531" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="2" animationOffset="0.2954901" heightOffset="-0.04478034">
+        <Position x="-2.52183318" y="2.08287239" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="331.863342" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.08646894" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="1.85021627" y="-8.131435" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.20333624" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="3" animationOffset="0.5730615" heightOffset="-0.003454227">
+        <Position x="-3.40092015" y="-0.480178952" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="162.944214" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.08462667" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="0.4249762" y="8.386172" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.53218341" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="2" animationOffset="0.0265471935" heightOffset="-0.0260219686">
+        <Position x="4.672944" y="0.301820248" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="312.729034" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.55597591" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-4.27991962" y="8.036721" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.11629319" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="6" animationOffset="0.7348217" heightOffset="-0.0142918285">
+        <Position x="1.71235418" y="-3.43399835" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="144.501129" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.0304606" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-1.930558" y="7.803692" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.46832848" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="0" animationOffset="0.0987861156" heightOffset="-0.00491598248">
+        <Position x="-3.93324924" y="0.686543345" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="200.874725" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.2215507" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="2.969374" y="7.86151552" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.55077219" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="1" animationOffset="0.7144089" heightOffset="0.008735508">
+        <Position x="3.80624652" y="1.31430387" z="0.0600000024" />
+        <Rotation x="0" y="-0" z="165.377563" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.11408031" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-3.6294837" y="-8.101733" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.05972111" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="8" animationOffset="0.09494579" heightOffset="-0.020649571">
+        <Position x="3.2586565" y="1.282882" z="0.0600000024" />
+        <Rotation x="-0" y="0" z="204.991043" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.20718813" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-0.4531075" y="-8.04739" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.57497561" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="7" animationOffset="0.556917846" heightOffset="-0.0391099341">
+        <Position x="-5.715091" y="0.5779322" z="0.07" />
+        <Rotation x="-0" y="0" z="291.608521" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.17825007" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-8.453296" y="-7.7222333" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.28730392" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="6" animationOffset="0.595161259" heightOffset="0.00131066516">
+        <Position x="-9.410405" y="2.79760551" z="0.07" />
+        <Rotation x="-0" y="0" z="194.81015" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.36217427" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-10.0277739" y="8.327752" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.18159652" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="9" animationOffset="0.69390285" heightOffset="0.03231156">
+        <Position x="-14.1563" y="-1.929723" z="0.07" />
+        <Rotation x="-0" y="0" z="332.693268" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.43869483" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-8.954122" y="8.09831" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.40725183" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="2" animationOffset="0.982584834" heightOffset="0.0137209035">
+        <Position x="-7.06549454" y="-3.13533044" z="0.07" />
+        <Rotation x="-0" y="0" z="294.074554" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.34528649" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-12.5874882" y="8.281435" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.19272256" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="1" animationOffset="0.927039862" heightOffset="0.0004129596">
+        <Position x="-5.81980944" y="1.98553276" z="0.07" />
+        <Rotation x="-0" y="0" z="280.033142" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.07185555" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-5.495141" y="8.437831" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.381715" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="0" animationOffset="0.270306766" heightOffset="0.0274495">
+        <Position x="-14.3523712" y="0.346068561" z="0.07" />
+        <Rotation x="0" y="-0" z="118.234154" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.45779693" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-12.9561672" y="7.923178" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.57442236" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="8" animationOffset="0.465529859" heightOffset="0.03202227">
+        <Position x="-10.8223057" y="-3.77295685" z="0.07" />
+        <Rotation x="0" y="-0" z="166.936981" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.49523211" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-9.258735" y="-7.76538754" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.31515765" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="4" animationOffset="0.131547809" heightOffset="-0.04371431">
+        <Position x="-6.214452" y="1.36137068" z="0.07" />
+        <Rotation x="-0" y="0" z="199.531525" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.49615884" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-9.074316" y="8.368629" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.23521161" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="6" animationOffset="0.0152695179" heightOffset="-0.0179558117">
+        <Position x="-9.71701" y="3.39458847" z="0.07" />
+        <Rotation x="0" y="-0" z="87.79136" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.19558787" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-14.7160006" y="7.891937" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.10895777" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="1" animationOffset="0.4395818" heightOffset="-0.0218840651">
+        <Position x="-13.015563" y="-1.948689" z="0.07" />
+        <Rotation x="-0" y="0" z="347.630676" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.08185661" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-5.462573" y="8.397339" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.2318387" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="6" animationOffset="0.4872182" heightOffset="-0.03822447">
+        <Position x="-24.0671062" y="-3.805273" z="0.08" />
+        <Rotation x="0" y="-0" z="156.038925" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.46369839" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-23.4875145" y="-7.69299841" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.40235519" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="9" animationOffset="0.106109858" heightOffset="-0.0141778905">
+        <Position x="-23.3685818" y="-0.6432869" z="0.08" />
+        <Rotation x="0" y="-0" z="162.734879" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.54183459" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-18.9703484" y="-7.682721" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.5031029" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="8" animationOffset="0.452712953" heightOffset="-0.04204767">
+        <Position x="-17.70091" y="0.84954685" z="0.08" />
+        <Rotation x="0" y="-0" z="159.444473" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.41290224" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-20.6888466" y="-8.180851" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.331682" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="2" animationOffset="0.96812737" heightOffset="0.0134063233">
+        <Position x="-20.1395721" y="-3.43034363" z="0.08" />
+        <Rotation x="0" y="-0" z="38.9012566" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.532619" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-21.3947678" y="8.279495" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.30830669" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="9" animationOffset="0.8597567" heightOffset="0.0167186353">
+        <Position x="-18.3277664" y="-3.405245" z="0.08" />
+        <Rotation x="-0" y="0" z="324.974426" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.33919036" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-22.4682484" y="7.7477746" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.06236649" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="2" animationOffset="0.241583824" heightOffset="-0.03527912">
+        <Position x="-19.4751472" y="-3.28647447" z="0.08" />
+        <Rotation x="0" y="-0" z="168.639084" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.62491345" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-18.622591" y="-8.200849" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.10323358" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="2" animationOffset="0.300462425" heightOffset="0.0230874531">
+        <Position x="-17.35819" y="-1.73709619" z="0.08" />
+        <Rotation x="-0" y="0" z="316.366425" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.34037888" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-16.4617672" y="-8.222474" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.09664237" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="1" animationOffset="0.387570918" heightOffset="0.0296610333">
+        <Position x="-15.4699249" y="-1.29414666" z="0.08" />
+        <Rotation x="-0" y="0" z="296.4832" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.05005074" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-22.8271236" y="-8.365513" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.58632994" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="0" animationOffset="0.71949625" heightOffset="0.0221243966">
+        <Position x="-19.2262764" y="2.05331254" z="0.08" />
+        <Rotation x="-0" y="0" z="291.897522" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.26649427" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-22.1034813" y="-8.305972" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.0848012" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="3" animationOffset="0.9401829" heightOffset="0.0188083388">
+        <Position x="-16.9838371" y="-0.460561156" z="0.08" />
+        <Rotation x="-0" y="0" z="280.858063" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.33" speedDefault="1.3342768" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="false">
+            <Waypoints>
+              <Waypoint x="-23.7263012" y="8.293737" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <UMANSconfig SimulationID="0" radius="0.33" prefered_speed="1.38294244" max_speed="3" max_acceleration="3.40282347E+38" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+  </agents>
+  <obstacles>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="25.1" y1="0.1" x2="24.9" y2="-0.1" thickness="3" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-25.1" y1="-0.1" x2="-24.9" y2="0.1" thickness="3" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+  </obstacles>
+</Trial>

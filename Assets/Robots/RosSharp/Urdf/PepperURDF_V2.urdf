@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="PepperURDF_V2">
+  <material name="Default-Diffuse">
+    <color rgba="1 1 1 0.5" />
+  </material>
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.005098 -0.042533 -7.7E-05" />
+      <mass value="100" />
+      <inertia ixx="1.05186545848846" ixy="0.018275074660778" ixz="-0.000129771753563546" iyy="1.13719856739044" iyz="1.46421336921776E-06" izz="1.86898028850555" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/wheels_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/wheels_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="leg">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.279763 0.213669 0.135611" />
+      <mass value="1" />
+      <inertia ixx="0.0180095843970776" ixy="-2.34699271572936E-07" ixz="1.18836505862419E-05" iyy="0.0188758466392756" iyz="-0.000247422169195488" izz="0.0195367336273193" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/leg_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/leg_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="lower_body">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.000243 -0.004785 0.210595" />
+      <mass value="1" />
+      <inertia ixx="0.0121049741283059" ixy="-1.11695771920495E-06" ixz="-1.00647946510435E-06" iyy="0.0133131388574839" iyz="-0.000216337226447649" izz="0.00582358427345753" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/lower_body_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/lower_body_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="upper_body">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/upper_body_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="upper_body_roll">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000145 0.007959 0.147839" />
+      <mass value="1" />
+      <inertia ixx="0.0101322364062071" ixy="6.08802156421007E-06" ixz="1.08719386844314E-05" iyy="0.0113384993746877" iyz="-0.00180153537075967" izz="0.00987729430198669" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/upper_body_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/upper_body_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="head_with_neck">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <link name="head_roll">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000146 -0.002998 0.113767" />
+      <mass value="0.1000000015" />
+      <inertia ixx="0.000488856574520469" ixy="6.2015026003337E-08" ixz="-5.97300164884018E-09" iyy="0.00046832615043968" iyz="-1.6081739886431E-05" izz="0.000375640578567982" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/head_with_neck_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/head_with_neck_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="R_shoulder">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <link name="R_shoulder_roll">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000152 0.004622 -0.070478" />
+      <mass value="1" />
+      <inertia ixx="0.00407197093591094" ixy="-6.48579589324072E-06" ixz="-2.84660618490307E-05" iyy="0.00408145179972053" iyz="0.000142000542837195" izz="0.00104234518948942" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/right_shoulder_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/right_shoulder_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="R_arm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <link name="R_arm_roll">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000778 0.001404 -0.057074" />
+      <mass value="1" />
+      <inertia ixx="0.00222960580140352" ixy="4.38667200342024E-07" ixz="2.52073041338008E-05" iyy="0.00223079253919423" iyz="-2.26591200771509E-05" izz="0.000629508809652179" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/right_arm_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/right_arm_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="R_wrist">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000602 -0.00316 -0.071635" />
+      <mass value="1" />
+      <inertia ixx="0.0018392113270238" ixy="5.50170116184745E-05" ixz="6.07900619797874E-06" iyy="0.00166046118829399" iyz="-2.35318366321735E-05" izz="0.000787981203757226" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/right_hand_0.stl" scale="1.000001 0.999999 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/right_hand_0.stl" scale="1.000001 0.999999 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="L_Shoulder">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <link name="L_Shoulder_roll">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000647 0.004307 -0.07035" />
+      <mass value="1" />
+      <inertia ixx="0.00407200958579779" ixy="6.58449107504566E-06" ixz="2.63808160525514E-05" iyy="0.00408139172941446" iyz="0.000142557182698511" izz="0.00104235962498933" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/left_shoulder_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/left_shoulder_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="L_arm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+    </inertial>
+  </link>
+  <link name="L_arm_roll">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.00113 0.00131 -0.056609" />
+      <mass value="1" />
+      <inertia ixx="0.00222989497706294" ixy="-4.78613515042525E-07" ixz="-2.51892197411507E-06" iyy="0.00223207217641175" iyz="-1.84244709089398E-05" izz="0.000628753390628845" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/left_arm_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/left_arm_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="L_wrist">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.001083 -0.003146 -0.071446" />
+      <mass value="1" />
+      <inertia ixx="0.00183271104469895" ixy="-5.81331405555829E-05" ixz="-8.70803069119575E-06" iyy="0.00165802123956382" iyz="-3.94846174458507E-05" izz="0.00078337307786569" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/left_hand_0.stl" scale="1 1 1" />
+      </geometry>
+      <material name="Default-Diffuse" />
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/left_hand_0.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_leg_joint" type="fixed">
+    <origin xyz="-0.28 -0.25 -0.05" />
+    <parent link="base_link" />
+    <child link="leg" />
+  </joint>
+  <joint name="leg_lower_body_joint" type="revolute">
+    <origin rpy="-0.271867 0 0" xyz="0.28 0.22 0.33" />
+    <parent link="leg" />
+    <child link="lower_body" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.523599" upper="0.087266" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="lower_body_upper_body_joint" type="revolute">
+    <origin rpy="-5.310895 0 0" xyz="0 0 0.42" />
+    <parent link="lower_body" />
+    <child link="upper_body" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.087266" upper="0.523599" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="upper_body_upper_body_roll_joint" type="revolute">
+    <origin rpy="-0.756468 0 0" />
+    <parent link="upper_body" />
+    <child link="upper_body_roll" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.261799" upper="0.261799" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="upper_body_roll_head_with_neck_joint" type="revolute">
+    <origin xyz="-0.0042 0.0362 0.2735" />
+    <parent link="upper_body_roll" />
+    <child link="head_with_neck" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.698132" upper="0.698132" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="head_with_neck_head_roll_joint" type="revolute">
+    <parent link="head_with_neck" />
+    <child link="head_roll" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.261799" upper="0.261799" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="upper_body_roll_R_shoulder_joint" type="revolute">
+    <origin rpy="-5.984687 0.187516 -4.655093" xyz="-0.1501 0.0581 0.2023" />
+    <parent link="upper_body_roll" />
+    <child link="R_shoulder" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.698132" upper="0.698132" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="R_shoulder_R_shoulder_roll_joint" type="revolute">
+    <parent link="R_shoulder" />
+    <child link="R_shoulder_roll" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.087266" upper="1.48353" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="R_shoulder_roll_R_arm_joint" type="revolute">
+    <origin rpy="-0.279381 0 0" xyz="0 0 -0.1852" />
+    <parent link="R_shoulder_roll" />
+    <child link="R_arm" />
+    <axis xyz="0 0 1" />
+    <limit lower="-0.698132" upper="0.698132" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="R_arm_R_arm_roll_joint" type="revolute">
+    <parent link="R_arm" />
+    <child link="R_arm_roll" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.872665" upper="0.872665" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="R_arm_roll_R_wrist_joint" type="revolute">
+    <origin xyz="0 0 -0.1395" />
+    <parent link="R_arm_roll" />
+    <child link="R_wrist" />
+    <axis xyz="0 0 1" />
+    <limit lower="-0.698132" upper="0.698132" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="upper_body_roll_L_Shoulder_joint" type="revolute">
+    <origin rpy="-5.984682 6.095667 -1.513497" xyz="0.1501 0.0581 0.2023" />
+    <parent link="upper_body_roll" />
+    <child link="L_Shoulder" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.698132" upper="0.698132" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="L_Shoulder_L_Shoulder_roll_joint" type="revolute">
+    <parent link="L_Shoulder" />
+    <child link="L_Shoulder_roll" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.087266" upper="1.48353" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="L_Shoulder_roll_L_arm_joint" type="revolute">
+    <origin rpy="-0.261799 0 0" xyz="0 0 -0.1852" />
+    <parent link="L_Shoulder_roll" />
+    <child link="L_arm" />
+    <axis xyz="0 0 1" />
+    <limit lower="-0.698132" upper="0.698132" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="L_arm_L_arm_roll_joint" type="revolute">
+    <parent link="L_arm" />
+    <child link="L_arm_roll" />
+    <axis xyz="1 0 0" />
+    <limit lower="-0.698132" upper="0.698132" effort="1000" velocity="1000" />
+  </joint>
+  <joint name="L_arm_roll_L_wrist_joint" type="revolute">
+    <origin xyz="0 0 -0.1395" />
+    <parent link="L_arm_roll" />
+    <child link="L_wrist" />
+    <axis xyz="0 0 1" />
+    <limit lower="-0.872665" upper="0.872665" effort="1000" velocity="1000" />
+  </joint>
+</robot>

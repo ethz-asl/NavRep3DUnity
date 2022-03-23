@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scene meshName="ChallengeCorridor">
+    <Position x="-0" y="0" z="0" />
+    <Rotation x="0" y="0" z="0" />
+    <recordingFile>Output_{USER}_{ITT}.csv</recordingFile>
+    <endingConditions>
+      <condition parameter="time" test="less" value="0" />
+    </endingConditions>
+  </scene>
+  <player>
+    <TrialCamPlayer mesh="CamPlayer" radius="0.33" in_sim="false">
+      <Position x="0.15" y="-8.22" z="18.5" />
+      <Rotation x="-71.84722" y="-0" z="-0" />
+      <controlLaw>
+        <LawCamControlEditor lookSpeedH="2" lookSpeedV="2" zoomSpeed="2" dragSpeed="3" />
+      </controlLaw>
+    </TrialCamPlayer>
+  </player>
+  <robots>
+    <robot>
+      <TrialRegularRobot mesh="Wheelchair_sensors" radius="0.5">
+        <Position x="-21.3" y="0" z="0.11" />
+        <Rotation x="0" y="0" z="328.408722" />
+        <controlLaw>
+          <LawFake />
+        </controlLaw>
+      </TrialRegularRobot>
+    </robot>
+  </robots>
+  <agents>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="4" animationOffset="0.575907648" heightOffset="-0.0238963775">
+        <Position x="19.4887428" y="-2.10872817" z="0" />
+        <Rotation x="-0" y="0" z="343.613647" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.10334885" speedDefault="2.18405747" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.6795635" y="3.37950683" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="4" animationOffset="0.4429893" heightOffset="0.0199283585">
+        <Position x="14.614975" y="-1.71760321" z="0" />
+        <Rotation x="0" y="-0" z="94.30773" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.53670859" speedDefault="1.84281456" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.965416" y="-3.728573" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="6" animationOffset="0.487615049" heightOffset="0.04470657">
+        <Position x="3.43087935" y="2.198172" z="0" />
+        <Rotation x="0" y="-0" z="88.6340942" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.39070654" speedDefault="2.228485" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.5999069" y="-1.07313681" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="1" animationOffset="0.4632557" heightOffset="-0.0106003471">
+        <Position x="5.69733667" y="-4.940279" z="0" />
+        <Rotation x="0" y="-0" z="61.0987053" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.09666252" speedDefault="1.78500223" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.6808224" y="-0.6406102" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="4" animationOffset="0.9650284" heightOffset="0.008012731">
+        <Position x="14.97215" y="2.58110428" z="0" />
+        <Rotation x="-0" y="0" z="182.714325" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.0345602" speedDefault="2.03868222" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.8514023" y="0.465301871" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="7" animationOffset="0.5827984" heightOffset="0.00853315">
+        <Position x="-19.8688717" y="1.66729522" z="0" />
+        <Rotation x="0" y="-0" z="14.3283176" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.438797" speedDefault="1.88847947" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.7677937" y="-3.31043625" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="4" animationOffset="0.776754141" heightOffset="0.04611483">
+        <Position x="6.684033" y="3.06280518" z="0" />
+        <Rotation x="0" y="-0" z="105.597519" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.35829091" speedDefault="1.90865958" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.069416" y="-1.561771" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="3" animationOffset="0.402255833" heightOffset="-0.0196789689">
+        <Position x="7.107006" y="-3.29424715" z="0" />
+        <Rotation x="0" y="-0" z="33.03756" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.5709331" speedDefault="2.160025" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.645031" y="-3.037288" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="1" animationOffset="0.290398777" heightOffset="0.0131689645">
+        <Position x="2.52067924" y="4.237865" z="0" />
+        <Rotation x="0" y="-0" z="165.378113" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.039906" speedDefault="2.00983024" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.785078" y="2.59931755" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="4" animationOffset="0.7643374" heightOffset="-0.014915498">
+        <Position x="1.67389953" y="4.620394" z="0" />
+        <Rotation x="0" y="-0" z="88.7470856" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.479689" speedDefault="2.12011528" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.7506142" y="1.70996475" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="5" animationOffset="0.739707947" heightOffset="0.0394113064">
+        <Position x="-1.30997026" y="4.63642025" z="0" />
+        <Rotation x="0" y="-0" z="96.36355" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.20806289" speedDefault="2.1947248" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.2537861" y="-2.35646033" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="0" animationOffset="0.5448857" heightOffset="-0.00323208049">
+        <Position x="13.2411966" y="-4.445383" z="0" />
+        <Rotation x="-0" y="0" z="192.694077" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.17087221" speedDefault="1.79862928" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.5120525" y="3.50784349" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="0" animationOffset="0.492247045" heightOffset="-0.000189967453">
+        <Position x="14.97484" y="0.11242491" z="0" />
+        <Rotation x="0" y="-0" z="100.529724" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.36100137" speedDefault="1.8393867" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.992424" y="1.48972368" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="5" animationOffset="0.8948971" heightOffset="0.03171953">
+        <Position x="-16.46006" y="4.42024" z="0" />
+        <Rotation x="0" y="-0" z="173.818542" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.32022822" speedDefault="1.7949152" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.154932" y="0.311437875" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="9" animationOffset="0.221427321" heightOffset="-0.00176102668">
+        <Position x="-3.80063868" y="4.91332054" z="0" />
+        <Rotation x="-0" y="0" z="323.949768" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.20200694" speedDefault="1.81252122" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.186718" y="2.82467246" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="0" animationOffset="0.0938292742" heightOffset="0.0250504613">
+        <Position x="-11.4451094" y="2.992838" z="0" />
+        <Rotation x="-0" y="0" z="300.4952" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.03621316" speedDefault="2.225067" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.2959538" y="-2.15004945" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="9" animationOffset="0.528499067" heightOffset="-0.03726652">
+        <Position x="-5.57768631" y="-1.29976964" z="0" />
+        <Rotation x="-0" y="0" z="242.177612" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.307913" speedDefault="2.14923859" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.9673634" y="-3.62621641" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="0" animationOffset="0.231260061" heightOffset="-0.0214599557">
+        <Position x="19.14192" y="-4.62140226" z="0" />
+        <Rotation x="-0" y="0" z="314.1471" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.59363925" speedDefault="2.152531" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.7708416" y="-1.05069613" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="7" animationOffset="0.381018937" heightOffset="-0.0409674756">
+        <Position x="-5.99010658" y="0.409331858" z="0" />
+        <Rotation x="0" y="-0" z="169.333237" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.17471516" speedDefault="1.86078918" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.45404" y="0.5921201" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="4" animationOffset="0.3958246" heightOffset="-0.00614536554">
+        <Position x="-8.65919" y="-3.93560863" z="0" />
+        <Rotation x="0" y="-0" z="23.6578579" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.41352892" speedDefault="2.13125372" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.3838959" y="-3.23485112" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="5" animationOffset="0.761371255" heightOffset="-0.0238987524">
+        <Position x="-12.3609314" y="-3.673935" z="0" />
+        <Rotation x="0" y="-0" z="15.8670473" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.53387237" speedDefault="1.95883727" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.125412" y="3.43718266" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="0" animationOffset="0.334687531" heightOffset="-0.0441797636">
+        <Position x="-16.10751" y="2.44273376" z="0" />
+        <Rotation x="-0" y="0" z="183.165634" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.27327335" speedDefault="1.81691933" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.0391235" y="3.55606937" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="3" animationOffset="0.0211931467" heightOffset="-0.0109014921">
+        <Position x="11.6217365" y="-4.57858849" z="0" />
+        <Rotation x="0" y="-0" z="108.974358" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.47714841" speedDefault="2.22190475" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.74761" y="2.3290205" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="2" animationOffset="0.483779848" heightOffset="0.0119409151">
+        <Position x="-3.59072948" y="0.608649969" z="0" />
+        <Rotation x="0" y="-0" z="111.76033" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.25143087" speedDefault="1.772578" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.7017345" y="0.187213063" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="8" animationOffset="0.6453755" heightOffset="0.0340976827">
+        <Position x="-5.73719835" y="1.14865136" z="0" />
+        <Rotation x="0" y="-0" z="51.5832138" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.22985244" speedDefault="1.90103173" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.8603287" y="-1.77940512" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="5" animationOffset="0.158197165" heightOffset="0.0456465147">
+        <Position x="-2.124245" y="-2.50841761" z="0" />
+        <Rotation x="0" y="-0" z="53.4887" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.48721015" speedDefault="2.13934851" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.843689" y="2.68721151" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="0" animationOffset="0.0384635925" heightOffset="-0.0491512753">
+        <Position x="5.10258961" y="1.53167033" z="0" />
+        <Rotation x="0" y="-0" z="73.64376" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.31529772" speedDefault="1.91728461" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.43296" y="-1.86188519" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="0" animationOffset="0.366244256" heightOffset="-0.0260863043">
+        <Position x="12.632659" y="-2.31537342" z="0" />
+        <Rotation x="0" y="-0" z="152.4028" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.07652378" speedDefault="2.21094513" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.8601265" y="-0.7187405" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="5" animationOffset="0.385934651" heightOffset="-0.0161948744">
+        <Position x="8.123037" y="4.918715" z="0" />
+        <Rotation x="0" y="-0" z="146.51326" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.3817184" speedDefault="1.8503437" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.8287029" y="0.751638651" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="2" animationOffset="0.867419839" heightOffset="-0.0267592557">
+        <Position x="19.44597" y="1.42887306" z="0" />
+        <Rotation x="-0" y="0" z="317.464417" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.08411551" speedDefault="1.79947221" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.448204" y="0.901642144" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="8" animationOffset="0.4771095" heightOffset="0.02100148">
+        <Position x="-10.3367405" y="1.04588914" z="0" />
+        <Rotation x="-0" y="0" z="243.967834" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.13759685" speedDefault="1.77111483" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.5110836" y="-2.00596046" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="4" animationOffset="0.363304675" heightOffset="0.0324914567">
+        <Position x="9.459035" y="-0.8708093" z="0" />
+        <Rotation x="0" y="-0" z="153.061462" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.254799" speedDefault="1.86150265" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.4928913" y="-0.21060881" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="3" animationOffset="0.5472637" heightOffset="0.0363875739">
+        <Position x="18.14731" y="4.511109" z="0" />
+        <Rotation x="-0" y="0" z="201.689087" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.07982993" speedDefault="1.76315928" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.3900032" y="3.42084312" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="8" animationOffset="0.5948754" heightOffset="0.0128916595">
+        <Position x="14.783041" y="3.73051047" z="0" />
+        <Rotation x="0" y="-0" z="99.169014" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.47542512" speedDefault="2.07888865" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.3027935" y="-0.760188639" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="5" animationOffset="0.009597063" heightOffset="0.01707822">
+        <Position x="-4.534488" y="3.605173" z="0" />
+        <Rotation x="0" y="-0" z="176.560822" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.37527943" speedDefault="1.91586459" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.21229" y="2.288458" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="8" animationOffset="0.3102619" heightOffset="-0.0208839">
+        <Position x="-0.04649592" y="0.723186255" z="0" />
+        <Rotation x="-0" y="0" z="349.715179" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.38008189" speedDefault="1.79979324" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.83675" y="-3.59382272" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="0" animationOffset="0.6379374" heightOffset="-0.00492220372">
+        <Position x="-10.5037622" y="-0.237678722" z="0" />
+        <Rotation x="-0" y="0" z="245.070648" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.30022883" speedDefault="1.72150588" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.9422321" y="2.752799" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="4" animationOffset="0.8308079" heightOffset="-0.0411930121">
+        <Position x="-19.4831924" y="1.81345272" z="0" />
+        <Rotation x="0" y="-0" z="110.721138" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.20576644" speedDefault="2.03128886" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.9568062" y="3.12443948" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="6" animationOffset="0.66989696" heightOffset="0.03998828">
+        <Position x="-11.41378" y="-2.804785" z="0" />
+        <Rotation x="0" y="-0" z="147.706863" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.309566" speedDefault="2.06453133" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.8307457" y="2.08158" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="1" animationOffset="0.9504992" heightOffset="-0.0472620465">
+        <Position x="-13.9368668" y="1.92357326" z="0" />
+        <Rotation x="-0" y="0" z="318.022583" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.57838464" speedDefault="1.90991616" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.39196" y="-0.502971351" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="0" animationOffset="0.1822679" heightOffset="0.000247042626">
+        <Position x="-7.936419" y="1.58639348" z="0" />
+        <Rotation x="0" y="-0" z="33.7762222" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.261337" speedDefault="1.778924" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.5236721" y="-1.4068234" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="7" animationOffset="0.9579084" heightOffset="0.0269175768">
+        <Position x="13.2820578" y="4.377866" z="0" />
+        <Rotation x="0" y="-0" z="24.2061443" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.44951189" speedDefault="1.892463" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.1415539" y="-0.6812877" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="4" animationOffset="0.5310367" heightOffset="0.00334634259">
+        <Position x="10.6645021" y="-4.26537657" z="0" />
+        <Rotation x="-0" y="0" z="359.940979" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.403074" speedDefault="2.03713465" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.4458542" y="1.64588439" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="7" animationOffset="0.6678709" heightOffset="0.03926948">
+        <Position x="17.2078419" y="-2.9298842" z="0" />
+        <Rotation x="0" y="-0" z="53.78644" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.3845644" speedDefault="1.88809347" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.2993183" y="1.14121294" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="9" animationOffset="0.5869654" heightOffset="0.009818118">
+        <Position x="12.6929083" y="1.25039148" z="0" />
+        <Rotation x="0" y="-0" z="25.8764477" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.16312981" speedDefault="1.88476384" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="28.02314" y="-0.660228252" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="8" animationOffset="0.3609385" heightOffset="-0.007947773">
+        <Position x="-1.23369193" y="-3.56187987" z="0" />
+        <Rotation x="0" y="-0" z="126.979691" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.42052019" speedDefault="2.19247174" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.8312778" y="-2.62653065" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="3" animationOffset="0.7096423" heightOffset="0.0159364585">
+        <Position x="-7.936837" y="-1.53627193" z="0" />
+        <Rotation x="0" y="-0" z="3.66634345" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.47891307" speedDefault="1.78010666" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.9656677" y="-3.754262" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="1" animationOffset="0.326881468" heightOffset="-0.0195079762">
+        <Position x="3.48761034" y="-4.67217255" z="0" />
+        <Rotation x="0" y="-0" z="105.518425" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.26860917" speedDefault="2.19315648" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="27.6159363" y="-3.62955332" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="5" animationOffset="0.236196756" heightOffset="0.00807976">
+        <Position x="7.284612" y="0.10253635" z="0" />
+        <Rotation x="-0" y="0" z="319.185" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.16134739" speedDefault="1.87995577" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.8788719" y="-1.635102" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="0" animationOffset="0.615357935" heightOffset="0.012617873">
+        <Position x="4.6113" y="-4.92135525" z="0" />
+        <Rotation x="-0" y="0" z="210.996" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.11119533" speedDefault="2.131263" accelerationMax="0.8" angularSpeed="270" reachedDist="0.1" isLooping="true">
+            <Waypoints>
+              <Waypoint x="26.9579239" y="0.361646473" z="0.01" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="0" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+  </agents>
+  <obstacles>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-25" y1="-30" x2="25" y2="20" thickness="0.1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+    <obstacle>
+      <TrialObstacle>
+        <Lines>
+          <Line x1="-25" y1="-20" x2="25" y2="30" thickness="0.1" />
+        </Lines>
+        <Points />
+      </TrialObstacle>
+    </obstacle>
+  </obstacles>
+</Trial>

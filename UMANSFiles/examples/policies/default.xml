@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Policies>
+	<!-- <Policy id="0" OptimizationMethod="gradient"> -->
+	<Policy id="0" OptimizationMethod="sampling" SamplingType="regular" SamplingBase="zero" SamplingBaseDirection="preferred velocity" SamplingAngle="180" SpeedSamples="15" AngleSamples="19" SamplingRadius="maximum speed" RelaxationTime="0" IncludeBaseAsSample="true">
+		<costfunction coeff="1" range="10" name="TtcaDca" sigmaTtca="0.3" sigmaDca="0.3" sigmaAngle_goal="3" sigmaSpeed_goal="0.01" />
+		<costfunction range="3" name="RVO" />
+	</Policy>
+</Policies>

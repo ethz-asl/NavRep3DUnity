@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 25bc54dbedb9aa64b8832d82c6944807
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: Bolts
+    100004: Bolts.002
+    100006: caster_fl
+    100008: caster_fr
+    100010: caster_rear
+    100012: Caster_wheels
+    100014: Cylinder03
+    100016: Cylinder03.002
+    100018: Cylinder04
+    100020: Cylinder04.002
+    100022: Cylinder05
+    100024: Cylinder05.002
+    100026: Cylinder06
+    100028: Cylinder06.002
+    100030: Cylinder07
+    100032: Cylinder07.002
+    100034: Cylinder08
+    100036: Cylinder08.002
+    100038: Cylinder09
+    100040: Cylinder09.002
+    100042: Cylinder10
+    100044: Cylinder10.002
+    100046: Cylinder11
+    100048: Cylinder11.002
+    100050: Cylinder12
+    100052: Cylinder12.002
+    100054: Group01
+    100056: Group01.002
+    100058: Group02
+    100060: Group02.002
+    100062: Group03
+    100064: Group03.002
+    100066: Group04
+    100068: Group04.002
+    100070: Group05
+    100072: Group05.002
+    100074: L_Tire
+    100076: L_Tire.002
+    100078: legs
+    100080: Motor_wheels
+    100082: Plane14
+    100084: Plane14.002
+    100086: Plane86
+    100088: Plane86.002
+    100090: Plane86.002_MeshPart0
+    100092: Plane86.002_MeshPart1
+    100094: Plane86_MeshPart0
+    100096: Plane86_MeshPart1
+    100098: Tube02
+    100100: Tube02.002
+    100102: //RootNode
+    400000: Body
+    400002: Bolts
+    400004: Bolts.002
+    400006: caster_fl
+    400008: caster_fr
+    400010: caster_rear
+    400012: Caster_wheels
+    400014: Cylinder03
+    400016: Cylinder03.002
+    400018: Cylinder04
+    400020: Cylinder04.002
+    400022: Cylinder05
+    400024: Cylinder05.002
+    400026: Cylinder06
+    400028: Cylinder06.002
+    400030: Cylinder07
+    400032: Cylinder07.002
+    400034: Cylinder08
+    400036: Cylinder08.002
+    400038: Cylinder09
+    400040: Cylinder09.002
+    400042: Cylinder10
+    400044: Cylinder10.002
+    400046: Cylinder11
+    400048: Cylinder11.002
+    400050: Cylinder12
+    400052: Cylinder12.002
+    400054: Group01
+    400056: Group01.002
+    400058: Group02
+    400060: Group02.002
+    400062: Group03
+    400064: Group03.002
+    400066: Group04
+    400068: Group04.002
+    400070: Group05
+    400072: Group05.002
+    400074: L_Tire
+    400076: L_Tire.002
+    400078: legs
+    400080: Motor_wheels
+    400082: Plane14
+    400084: Plane14.002
+    400086: Plane86
+    400088: Plane86.002
+    400090: Plane86.002_MeshPart0
+    400092: Plane86.002_MeshPart1
+    400094: Plane86_MeshPart0
+    400096: Plane86_MeshPart1
+    400098: Tube02
+    400100: Tube02.002
+    400102: //RootNode
+    2300000: Body
+    2300002: caster_fl
+    2300004: caster_fr
+    2300006: caster_rear
+    2300008: Cylinder03
+    2300010: Cylinder03.002
+    2300012: Cylinder04
+    2300014: Cylinder04.002
+    2300016: Cylinder05
+    2300018: Cylinder05.002
+    2300020: Cylinder06
+    2300022: Cylinder06.002
+    2300024: Cylinder07
+    2300026: Cylinder07.002
+    2300028: Cylinder08
+    2300030: Cylinder08.002
+    2300032: Cylinder09
+    2300034: Cylinder09.002
+    2300036: Cylinder10
+    2300038: Cylinder10.002
+    2300040: Cylinder11
+    2300042: Cylinder11.002
+    2300044: Cylinder12
+    2300046: Cylinder12.002
+    2300048: Plane14
+    2300050: Plane14.002
+    2300052: Plane86.002_MeshPart0
+    2300054: Plane86.002_MeshPart1
+    2300056: Plane86_MeshPart0
+    2300058: Plane86_MeshPart1
+    2300060: Tube02
+    2300062: Tube02.002
+    3300000: Body
+    3300002: caster_fl
+    3300004: caster_fr
+    3300006: caster_rear
+    3300008: Cylinder03
+    3300010: Cylinder03.002
+    3300012: Cylinder04
+    3300014: Cylinder04.002
+    3300016: Cylinder05
+    3300018: Cylinder05.002
+    3300020: Cylinder06
+    3300022: Cylinder06.002
+    3300024: Cylinder07
+    3300026: Cylinder07.002
+    3300028: Cylinder08
+    3300030: Cylinder08.002
+    3300032: Cylinder09
+    3300034: Cylinder09.002
+    3300036: Cylinder10
+    3300038: Cylinder10.002
+    3300040: Cylinder11
+    3300042: Cylinder11.002
+    3300044: Cylinder12
+    3300046: Cylinder12.002
+    3300048: Plane14
+    3300050: Plane14.002
+    3300052: Plane86.002_MeshPart0
+    3300054: Plane86.002_MeshPart1
+    3300056: Plane86_MeshPart0
+    3300058: Plane86_MeshPart1
+    3300060: Tube02
+    3300062: Tube02.002
+    4300000: Body
+    4300002: Cylinder10
+    4300004: Cylinder09
+    4300006: Cylinder08
+    4300008: Cylinder07
+    4300010: Cylinder06
+    4300012: Cylinder05
+    4300014: Cylinder03
+    4300016: Cylinder04
+    4300018: Cylinder12
+    4300020: Cylinder11
+    4300022: Tube02
+    4300024: Plane14
+    4300026: Plane86_MeshPart0
+    4300028: Plane86_MeshPart1
+    4300030: Cylinder10.002
+    4300032: Cylinder09.002
+    4300034: Cylinder08.002
+    4300036: Cylinder07.002
+    4300038: Cylinder06.002
+    4300040: Cylinder05.002
+    4300042: Cylinder03.002
+    4300044: Cylinder04.002
+    4300046: Cylinder12.002
+    4300048: Cylinder11.002
+    4300050: Plane86.002_MeshPart0
+    4300052: Plane86.002_MeshPart1
+    4300054: Tube02.002
+    4300056: Plane14.002
+    4300058: caster_rear
+    4300060: caster_fr
+    4300062: caster_fl
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default.003
+    second: {fileID: 2100000, guid: 49cc80badeac0a444ba44f39880c7e74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default.005
+    second: {fileID: 2100000, guid: ccdc8e5ccd0ed5f4caacf5567c8ab22e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 08 - Default.003
+    second: {fileID: 2100000, guid: f0bafd920ef7f32408e90db5c98a5162, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 08 - Default.005
+    second: {fileID: 2100000, guid: 01b8a9a314d57d840bd0e084af753735, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Color_008.007
+    second: {fileID: 2100000, guid: 8096d2f8c17557c4e9e2acb94ce24927, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #0.003'
+    second: {fileID: 2100000, guid: 353c628c1c19fa84e92da72ba709309b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 7cfde1d81a38b244d8db906a5d72d242, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Aluminum_Anodized_0.006
+    second: {fileID: 2100000, guid: 5adf81c04b880ce4d849458ee4148d9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Corrogated_Shiny.007
+    second: {fileID: 2100000, guid: dedc8497049579b42b515408cce175f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Corrogated_Shiny_1.006
+    second: {fileID: 2100000, guid: 659ca0dd5a895ff44a906a42f50f6d08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material
+    second: {fileID: 2100000, guid: 45a3a8605c614da4ebbc8329597ef53c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material.007
+    second: {fileID: 2100000, guid: b5773ff7ac8890c41b95b851249c4fa1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scene meshName="multi_dim">
+    <Position x="0" y="0" z="0" />
+    <Rotation x="0" y="0" z="0" />
+    <endingConditions>
+      <condition parameter="time" test="less" value="0" />
+    </endingConditions>
+  </scene>
+
+  <player>
+    <TrialRegularPlayer mesh="RegPlayer" radius="0.33">
+      <Position x="-20" y="0" z="0" />
+      <Rotation x="0" y="0" z="90" />
+      <controlLaw>
+        <LawControllerSpeedAngle speedCurrent="0" speedDefault="0" speedVariation="1.5" angularSpeed="30" accelerationMax="0.8" timeBeforeControl="0" />
+      </controlLaw>
+    </TrialRegularPlayer>
+  </player>
+
+  <agents>
+    <agent>
+      <TrialRegularAgent mesh="m001" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.4" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-20" y="-20" z="0" />
+              <Waypoint x="20" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m002" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-16" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.6" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-16" y="-20" z="0" />
+              <Waypoint x="16" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m003" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-12" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.7" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-12" y="-20" z="0" />
+              <Waypoint x="12" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m004" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-8" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.1" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-8" y="-20" z="0" />
+              <Waypoint x="8" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m005" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-4" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.2" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-4" y="-20" z="0" />
+              <Waypoint x="4" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m006" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="0" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.1" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="0" y="-20" z="0" />
+              <Waypoint x="0" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m007" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="4" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.1" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="4" y="-20" z="0" />
+              <Waypoint x="-4" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m008" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="8" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="8" y="-20" z="0" />
+              <Waypoint x="-8" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m009" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="12" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.6" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="12" y="-20" z="0" />
+              <Waypoint x="-12" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m010" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="16" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.7" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="16" y="-20" z="0" />
+              <Waypoint x="-16" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m011" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="-20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.7" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-20" z="0" />
+              <Waypoint x="-20" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m012" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="-16" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-16" z="0" />
+              <Waypoint x="-20" y="16" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m013" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="-12" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-12" z="0" />
+              <Waypoint x="-20" y="12" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m014" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="-8" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-8" z="0" />
+              <Waypoint x="-20" y="8" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m015" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="-4" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.7" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-4" z="0" />
+              <Waypoint x="-20" y="4" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m016" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="0" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.2" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="0" z="0" />
+              <Waypoint x="-20" y="0" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m017" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="4" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="4" z="0" />
+              <Waypoint x="-20" y="-4" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m018" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="8" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.6" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="8" z="0" />
+              <Waypoint x="-20" y="-8" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m019" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="12" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.4" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="12" z="0" />
+              <Waypoint x="-20" y="-12" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="m020" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="16" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.3" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="16" z="0" />
+              <Waypoint x="-20" y="-16" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f001" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="20" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.4" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-20" y="-20" z="0" />
+              <Waypoint x="20" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f002" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="16" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.6" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-16" y="-20" z="0" />
+              <Waypoint x="16" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f003" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="12" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.7" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-12" y="-20" z="0" />
+              <Waypoint x="12" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f004" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="8" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.1" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-8" y="-20" z="0" />
+              <Waypoint x="8" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f005" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="4" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.2" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="-4" y="-20" z="0" />
+              <Waypoint x="4" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f006" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="0" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.1" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="0" y="-20" z="0" />
+              <Waypoint x="0" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f007" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-4" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.1" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="4" y="-20" z="0" />
+              <Waypoint x="-4" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f008" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-8" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="8" y="-20" z="0" />
+              <Waypoint x="-8" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f009" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-12" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.6" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="12" y="-20" z="0" />
+              <Waypoint x="-12" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f010" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-16" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.7" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="16" y="-20" z="0" />
+              <Waypoint x="-16" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f011" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="20" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.7" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-20" z="0" />
+              <Waypoint x="-20" y="20" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f012" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="16" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-16" z="0" />
+              <Waypoint x="-20" y="16" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f013" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="12" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-12" z="0" />
+              <Waypoint x="-20" y="12" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f014" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="8" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-8" z="0" />
+              <Waypoint x="-20" y="8" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f015" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="4" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.7" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="-4" z="0" />
+              <Waypoint x="-20" y="4" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f016" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="0" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.2" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="0" z="0" />
+              <Waypoint x="-20" y="0" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f017" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="-4" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.5" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="4" z="0" />
+              <Waypoint x="-20" y="-4" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f018" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="-8" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.6" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="8" z="0" />
+              <Waypoint x="-20" y="-8" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f019" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="-12" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.4" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="12" z="0" />
+              <Waypoint x="-20" y="-12" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+    <agent>
+      <TrialRegularAgent mesh="f020" radius="0.33" visualVariation="0" animationOffset="0" heightOffset="0">
+        <Position x="-20" y="-16" z="0" />
+        <Rotation x="0" y="0" z="90" />
+        <controlLaw>
+          <LawWaypoints speedCurrent="1.629349" speedDefault="1.3" accelerationMax="0.8" isLooping="true">
+            <Waypoints>
+              <Waypoint x="20" y="16" z="0" />
+              <Waypoint x="-20" y="-16" z="0" />
+            </Waypoints>
+          </LawWaypoints>
+        </controlLaw>
+        <controlSim>
+          <CrowdBotControlSimConfig SimulationID="0" neighborDist="100" maxNeighbors="100" timeHorizon="10" timeHorizonObst="10" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+
+  </agents>
+</Trial>

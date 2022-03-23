@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="Body">
+  <material name="Default-Material">
+    <color rgba="1 1 1 1" />
+  </material>
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <mass value="1" />
+      <inertia ixx="0.00812011864036322" ixy="-1.98765254255662E-10" ixz="0" iyy="0.00812011864036322" iyz="0" izz="0.0134958978742361" />
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder length="0.12832" radius="0.164893" />
+      </geometry>
+      <material name="Default-Material" />
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.12832" radius="0.164893" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 -0.194457" />
+      <mass value="1" />
+      <inertia ixx="0.0112345023080707" ixy="0" ixz="0" iyy="0.0112345023080707" iyz="0" izz="0.00251521426253021" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.562" />
+      <geometry>
+        <box size="1 1 1" />
+      </geometry>
+      <material name="Default-Material" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.562" />
+      <geometry>
+        <box size="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="" type="floating">
+    <origin xyz="0 0.098 -0.076" />
+    <parent link="base_link" />
+    <child link="link" />
+  </joint>
+</robot>

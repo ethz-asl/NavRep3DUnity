@@ -1,0 +1,6 @@
+[submodule "Assets/AddOns/rocketboxtxtvar"]
+	path = Assets/AddOns/rocketboxtxtvar
+	url = git@gitlab.inria.fr:crowdmp/addons/rocketboxtxtvar
+[submodule "catkin_crowdbotsim"]
+	path = catkin_crowdbotsim
+	url = git@github.com:danieldugas/catkin_crowdbotsim.git

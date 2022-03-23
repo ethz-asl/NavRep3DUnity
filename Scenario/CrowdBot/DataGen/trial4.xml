@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <scene meshName="Corridor">
+    <Position x="2700" y="0" z="0" />
+    <Rotation x="0" y="0" z="0" />
+    <recordingFile>Output_{USER}_{ITT}.csv</recordingFile>
+    <endingConditions>
+      <condition parameter="time" test="greater" value="60" />
+    </endingConditions>
+  </scene>
+  <player>
+    <TrialCamPlayer mesh="CamPlayer" radius="0.33" in_sim="false">
+      <Position x="2689.56" y="0.28" z="11.1500006" />
+      <Rotation x="-30.0000076" y="0" z="270" />
+      <controlLaw>
+        <LawCamControlEditor lookSpeedH="2" lookSpeedV="2" zoomSpeed="10" dragSpeed="3" />
+      </controlLaw>
+    </TrialCamPlayer>
+  </player>
+  <robots>
+    <robot>
+      <TrialRegularRobot mesh="Pepper_LidarFront" radius="1">
+        <Position x="2700" y="40" z="0.01" />
+        <Rotation x="0" y="0" z="0" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.1" accelerationMax="0.8" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="-0" y="-40" z="0" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+      </TrialRegularRobot>
+    </robot>
+  </robots>
+  <agents>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="0" animationOffset="0.909826636" heightOffset="-0.04452968">
+        <Position x="2701.79761" y="-31.4550037" z="0.01" />
+        <Rotation x="-0" y="0" z="246.9181" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.18188286" accelerationMax="0.716780066" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.44873" y="-44.3958" z="0.01" />
+              <Goal x="2703.16772" y="38.7672" z="0.01" />
+              <Goal x="2700.98535" y="-37.6452141" z="0.01" />
+              <Goal x="2703.401" y="-45.4353027" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="5" animationOffset="0.539784133" heightOffset="0.0235142224">
+        <Position x="2701.79346" y="-31.12192" z="0.01" />
+        <Rotation x="0" y="-0" z="69.64624" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.460553" accelerationMax="0.7174023" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.44873" y="-44.3958" z="0.01" />
+              <Goal x="2703.16772" y="38.7672" z="0.01" />
+              <Goal x="2700.98535" y="-37.6452141" z="0.01" />
+              <Goal x="2703.401" y="-45.4353027" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="1" animationOffset="0.38232094" heightOffset="0.04960121">
+        <Position x="2701.45386" y="-31.0771313" z="0.01" />
+        <Rotation x="0" y="-0" z="89.0151" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.59357917" accelerationMax="0.7506384" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.44873" y="-44.3958" z="0.01" />
+              <Goal x="2703.16772" y="38.7672" z="0.01" />
+              <Goal x="2700.98535" y="-37.6452141" z="0.01" />
+              <Goal x="2703.401" y="-45.4353027" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="5" animationOffset="0.6616558" heightOffset="-0.0363121368">
+        <Position x="2702.22559" y="-31.1251125" z="0.01" />
+        <Rotation x="0" y="-0" z="67.2205" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.10657585" accelerationMax="0.9253427" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.44873" y="-44.3958" z="0.01" />
+              <Goal x="2703.16772" y="38.7672" z="0.01" />
+              <Goal x="2700.98535" y="-37.6452141" z="0.01" />
+              <Goal x="2703.401" y="-45.4353027" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="8" animationOffset="0.5907021" heightOffset="0.0143765677">
+        <Position x="2701.626" y="-30.7164783" z="0.01" />
+        <Rotation x="-0" y="0" z="348.815369" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.43723738" accelerationMax="0.9001344" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.44873" y="-44.3958" z="0.01" />
+              <Goal x="2703.16772" y="38.7672" z="0.01" />
+              <Goal x="2700.98535" y="-37.6452141" z="0.01" />
+              <Goal x="2703.401" y="-45.4353027" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="8" animationOffset="0.09018767" heightOffset="-0.0485602655">
+        <Position x="2696.55444" y="-16.48246" z="0.01" />
+        <Rotation x="0" y="-0" z="84.24458" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.23987412" accelerationMax="0.605294645" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.059" y="39.1720543" z="0.01" />
+              <Goal x="2699.45435" y="-38.013092" z="0.01" />
+              <Goal x="2697.74" y="-37.4373322" z="0.01" />
+              <Goal x="2696.329" y="-46.3138962" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="4" animationOffset="0.8239347" heightOffset="-0.04716183">
+        <Position x="2696.22119" y="-16.75267" z="0.01" />
+        <Rotation x="-0" y="0" z="289.4923" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.57320178" accelerationMax="0.9587411" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.059" y="39.1720543" z="0.01" />
+              <Goal x="2699.45435" y="-38.013092" z="0.01" />
+              <Goal x="2697.74" y="-37.4373322" z="0.01" />
+              <Goal x="2696.329" y="-46.3138962" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="7" animationOffset="0.194928646" heightOffset="0.04011756">
+        <Position x="2701.98267" y="-34.2949066" z="0.01" />
+        <Rotation x="-0" y="0" z="272.619781" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.57388544" accelerationMax="0.788586259" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2702.005" y="-37.91559" z="0.01" />
+              <Goal x="2701.257" y="-44.31703" z="0.01" />
+              <Goal x="2701.39624" y="-38.205265" z="0.01" />
+              <Goal x="2699.25879" y="-46.62365" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="2" animationOffset="0.6434102" heightOffset="0.04557507">
+        <Position x="2701.80713" y="-34.8047562" z="0.01" />
+        <Rotation x="-0" y="0" z="204.968338" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.04542089" accelerationMax="0.8930878" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2702.005" y="-37.91559" z="0.01" />
+              <Goal x="2701.257" y="-44.31703" z="0.01" />
+              <Goal x="2701.39624" y="-38.205265" z="0.01" />
+              <Goal x="2699.25879" y="-46.62365" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="4" animationOffset="0.3983751" heightOffset="0.0373732336">
+        <Position x="2703.28" y="19.9026089" z="0.01" />
+        <Rotation x="-0" y="0" z="181.6778" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.14299989" accelerationMax="0.669927061" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.59814" y="-38.7865219" z="0.01" />
+              <Goal x="2696.689" y="40.3180656" z="0.01" />
+              <Goal x="2698.41821" y="42.2316322" z="0.01" />
+              <Goal x="2697.49634" y="37.98859" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="0" animationOffset="0.939759731" heightOffset="0.0295051672">
+        <Position x="2703.1394" y="20.3254871" z="0.01" />
+        <Rotation x="0" y="-0" z="54.33701" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.42614341" accelerationMax="0.638624966" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2699.59814" y="-38.7865219" z="0.01" />
+              <Goal x="2696.689" y="40.3180656" z="0.01" />
+              <Goal x="2698.41821" y="42.2316322" z="0.01" />
+              <Goal x="2697.49634" y="37.98859" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="2" animationOffset="0.116995811" heightOffset="-0.0273308773">
+        <Position x="2699.48364" y="-45.47827" z="0.01" />
+        <Rotation x="-0" y="0" z="270.339752" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.55189431" accelerationMax="0.955782354" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2698.24121" y="37.3200722" z="0.01" />
+              <Goal x="2698.13745" y="-46.52557" z="0.01" />
+              <Goal x="2702.21045" y="-38.05288" z="0.01" />
+              <Goal x="2697.89722" y="-40.959774" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="7" animationOffset="0.798349142" heightOffset="0.04945102">
+        <Position x="2699.33984" y="-46.0470619" z="0.01" />
+        <Rotation x="0" y="-0" z="12.3524532" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.28532732" accelerationMax="0.850233257" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2698.24121" y="37.3200722" z="0.01" />
+              <Goal x="2698.13745" y="-46.52557" z="0.01" />
+              <Goal x="2702.21045" y="-38.05288" z="0.01" />
+              <Goal x="2697.89722" y="-40.959774" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="5" animationOffset="0.114380717" heightOffset="0.0365271457">
+        <Position x="2696.443" y="4.77810431" z="0.01" />
+        <Rotation x="0" y="-0" z="40.865406" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.27795529" accelerationMax="0.7466799" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2697.073" y="-39.203968" z="0.01" />
+              <Goal x="2699.312" y="45.3521843" z="0.01" />
+              <Goal x="2697.20923" y="44.4630547" z="0.01" />
+              <Goal x="2700.77124" y="43.5135956" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="6" animationOffset="0.488133967" heightOffset="-0.0339270942">
+        <Position x="2701.80029" y="40.447567" z="0.01" />
+        <Rotation x="-0" y="0" z="341.300232" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.42853713" accelerationMax="0.912280142" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2702.05225" y="-38.2997665" z="0.01" />
+              <Goal x="2702.78979" y="39.7015533" z="0.01" />
+              <Goal x="2697.08838" y="46.3850021" z="0.01" />
+              <Goal x="2701.446" y="-38.7080574" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="3" animationOffset="0.5476622" heightOffset="-0.0216189343">
+        <Position x="2696.86841" y="-0.539741933" z="0.01" />
+        <Rotation x="0" y="-0" z="61.9370575" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.42442191" accelerationMax="0.7969656" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2698.333" y="38.6641769" z="0.01" />
+              <Goal x="2703.22485" y="41.769455" z="0.01" />
+              <Goal x="2702.599" y="-41.103447" z="0.01" />
+              <Goal x="2702.847" y="37.4862366" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="8" animationOffset="0.6715759" heightOffset="0.03784028">
+        <Position x="2700.27" y="-37.56636" z="0.01" />
+        <Rotation x="-0" y="0" z="187.322021" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.45013893" accelerationMax="0.8032712" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2703.41455" y="-37.8844566" z="0.01" />
+              <Goal x="2697.68066" y="40.0503922" z="0.01" />
+              <Goal x="2700.56421" y="45.8724747" z="0.01" />
+              <Goal x="2702.55469" y="39.116497" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="1" animationOffset="0.5524723" heightOffset="-0.039857056">
+        <Position x="2699.471" y="-13.1115665" z="0.01" />
+        <Rotation x="-0" y="0" z="298.39743" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.448332" accelerationMax="0.947665" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2700.47681" y="-44.22781" z="0.01" />
+              <Goal x="2699.55713" y="-42.9213524" z="0.01" />
+              <Goal x="2698.55859" y="-42.38551" z="0.01" />
+              <Goal x="2701.53931" y="-42.92641" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="9" animationOffset="0.0321147442" heightOffset="0.009843808">
+        <Position x="2697.72778" y="-2.34956837" z="0.01" />
+        <Rotation x="0" y="-0" z="149.130066" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.5386" accelerationMax="0.671851635" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2701.8623" y="44.5414734" z="0.01" />
+              <Goal x="2698.0415" y="-40.7357826" z="0.01" />
+              <Goal x="2697.23218" y="43.17986" z="0.01" />
+              <Goal x="2697.448" y="40.5657959" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="plasticMan" radius="0.33" visualVariation="7" animationOffset="0.6443294" heightOffset="-0.00676224753">
+        <Position x="2698.63818" y="15.9476976" z="0.01" />
+        <Rotation x="-0" y="0" z="326.551819" />
+        <controlLaw>
+          <LawGoals speedCurrent="0" speedDefault="1.614141" accelerationMax="0.788211763" angularSpeed="36000" reachedDist="0.5" isLooping="true">
+            <Goals>
+              <Goal x="2696.64331" y="41.37291" z="0.01" />
+              <Goal x="2702.802" y="-38.60921" z="0.01" />
+              <Goal x="2697.246" y="43.01476" z="0.01" />
+              <Goal x="2701.447" y="-40.99895" z="0.01" />
+            </Goals>
+          </LawGoals>
+        </controlLaw>
+        <controlSim>
+          <RVOconfig SimulationID="1" neighborDist="5" maxNeighbors="3" timeHorizon="5" timeHorizonObst="2" radius="0.33" maxSpeed="2" />
+        </controlSim>
+      </TrialRegularAgent>
+    </agent>
+  </agents>
+</Trial>
