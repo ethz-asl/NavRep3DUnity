@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <experience currentUser="0" startingTrial="0">
+    <sourceFileExperiment>./Assets/AddOns/RocketBoxTxtVar/Colliders/FileOrder{USER}.csv</sourceFileExperiment>
+    <userHeight>1.7</userHeight>
+  </experience>
+  <Recording dataSeparator="," decimalSeparator="." useHeaders="true">
+    <folder>./Output/</folder>
+  </Recording>
+  <log debugLvl="0" />
+  <!-- <AddOns>
+    <AddOn>
+    <AddOn>
+  <AddOns/> -->
+</Config>

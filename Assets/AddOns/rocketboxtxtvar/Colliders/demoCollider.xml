@@ -1,0 +1,1177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Trial xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <scene meshName="Scene">
+    <Position x="0" y="0" z="0" />
+    <Rotation x="0" y="0" z="0" />
+    <recordingFile>Output_{USER}_{ITT}.csv</recordingFile>
+    <endingConditions>
+      <condition parameter="time" test="greater" value="60" />
+    </endingConditions>
+  </scene>
+  <player>
+    <TrialRegularPlayer mesh="RegPlayer" radius="0.33">
+      <Position x="0" y="0" z="0" />
+      <Rotation x="0" y="0" z="0" />
+      <controlLaw>
+        <LawControllerSpeedAngle speedCurrent="0" speedDefault="1.33" speedVariation="0.5" angularSpeed="30" accelerationMax="0.8" timeBeforeControl="0" />
+      </controlLaw>
+    </TrialRegularPlayer>
+  </player>
+  <screenRecorder record="false" timeToStart="0" timeToStop="0" framerate="25">
+    <saveDir>./Output/</saveDir>
+  </screenRecorder>
+  <SavedDataList>
+    <data>
+      <DataUnitySpatial />
+    </data>
+    <data>
+      <DataDeviceState />
+    </data>
+  </SavedDataList>
+<agents>
+    <agent>
+      <TrialRegularAgent mesh="f005" visualVariation="0" animationOffset="0.554958" >
+        <Position x="-0.593924" y="-15.805326" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.158918" y="-16.493980" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f009" visualVariation="0" animationOffset="0.593558" >
+        <Position x="-1.384726" y="-16.193240" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.586839" y="-17.846244" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m007" visualVariation="0" animationOffset="0.475809" >
+        <Position x="0.267065" y="-15.376587" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="2.079400" y="-13.890245" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f013" visualVariation="0" animationOffset="0.075907" >
+        <Position x="-0.304046" y="-14.703672" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.613149" y="-15.959822" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f011" visualVariation="1" animationOffset="0.163944" >
+        <Position x="-0.662355" y="-16.576818" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.210335" y="-16.565912" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m013" visualVariation="1" animationOffset="0.723967" >
+        <Position x="0.810047" y="-15.907033" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.500154" y="-14.657135" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m011" visualVariation="1" animationOffset="0.222329" >
+        <Position x="-0.195254" y="-16.240094" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.943816" y="-17.486952" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" visualVariation="2" animationOffset="0.996806" >
+        <Position x="-1.290991" y="-16.718357" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.502619" y="-15.407627" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" visualVariation="2" animationOffset="0.013241" >
+        <Position x="0.088352" y="-14.283182" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.377080" y="-15.949338" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f016" visualVariation="0" animationOffset="0.958282" >
+        <Position x="-0.392072" y="-17.198505" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.308179" y="-18.913010" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m015" visualVariation="2" animationOffset="0.519833" >
+        <Position x="-0.339533" y="-13.921859" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.577296" y="-14.525105" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f006" visualVariation="0" animationOffset="0.341834" >
+        <Position x="-1.417604" y="-17.228464" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.593042" y="-19.204050" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m001" visualVariation="0" animationOffset="0.807880" >
+        <Position x="0.583000" y="-16.398259" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.007215" y="-17.924491" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m010" visualVariation="1" animationOffset="0.176717" >
+        <Position x="-1.125672" y="-13.391952" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.883890" y="-13.183569" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" visualVariation="1" animationOffset="0.009338" >
+        <Position x="-0.874701" y="-17.549424" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.629610" y="-17.501841" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m016" visualVariation="0" animationOffset="0.438429" >
+        <Position x="0.976425" y="-15.143478" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.257886" y="-15.325114" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m004" visualVariation="0" animationOffset="0.857018" >
+        <Position x="-1.684329" y="-12.702290" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.313838" y="-12.952347" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m009" visualVariation="2" animationOffset="0.769329" >
+        <Position x="-1.752362" y="-15.495320" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.848510" y="-15.663000" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f003" visualVariation="1" animationOffset="0.894392" >
+        <Position x="-2.257363" y="-16.122676" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.485776" y="-14.405639" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m005" visualVariation="2" animationOffset="0.043760" >
+        <Position x="-0.762970" y="-12.933232" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.598598" y="-11.360994" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m006" visualVariation="1" animationOffset="0.654657" >
+        <Position x="1.645843" y="-15.712282" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="2.197324" y="-17.417809" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f015" visualVariation="0" animationOffset="0.367593" >
+        <Position x="-1.415845" y="-14.334600" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.486656" y="-13.143315" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f004" visualVariation="2" animationOffset="0.064110" >
+        <Position x="-1.037633" y="-14.989966" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.349922" y="-14.666111" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m012" visualVariation="0" animationOffset="0.882260" >
+        <Position x="0.899109" y="-17.193754" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.931763" y="-15.358857" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" visualVariation="2" animationOffset="0.751281" >
+        <Position x="-0.389843" y="-13.368798" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.621064" y="-12.307461" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f001" visualVariation="1" animationOffset="0.831047" >
+        <Position x="-2.167369" y="-16.803855" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.688631" y="-17.514498" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m003" visualVariation="2" animationOffset="0.033267" >
+        <Position x="-0.969428" y="-12.210783" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.064337" y="-14.053339" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" visualVariation="0" animationOffset="0.546113" >
+        <Position x="-2.134826" y="-14.696761" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.991094" y="-14.056775" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m002" visualVariation="2" animationOffset="0.765519" >
+        <Position x="-0.927728" y="-14.182004" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.202854" y="-12.306455" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f002" visualVariation="1" animationOffset="0.168787" >
+        <Position x="2.275411" y="-16.248457" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.073039" y="-14.938705" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" visualVariation="0" animationOffset="0.209753" >
+        <Position x="-0.334616" y="-15.328029" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.304632" y="-14.217823" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f008" visualVariation="2" animationOffset="0.686662" >
+        <Position x="0.128332" y="-13.358480" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.939510" y="-14.124097" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f012" visualVariation="0" animationOffset="0.142409" >
+        <Position x="-1.709193" y="-12.102008" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.300568" y="-10.620987" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f007" visualVariation="1" animationOffset="0.798233" >
+        <Position x="0.593418" y="-14.268636" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.634225" y="-12.948800" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f014" visualVariation="0" animationOffset="0.024198" >
+        <Position x="1.267110" y="-16.648787" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.104232" y="-16.831125" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m008" visualVariation="1" animationOffset="0.427374" >
+        <Position x="0.099154" y="-16.934885" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.440317" y="-16.525569" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" visualVariation="2" animationOffset="0.331355" >
+        <Position x="-2.985830" y="-16.313814" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-4.384987" y="-17.858220" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m014" visualVariation="1" animationOffset="0.052626" >
+        <Position x="-2.679608" y="-17.375670" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.964305" y="-16.492762" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" visualVariation="1" animationOffset="0.374289" >
+        <Position x="0.291093" y="-14.824698" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.988180" y="-15.310008" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f012" visualVariation="1" animationOffset="0.396577" >
+        <Position x="1.945866" y="-17.298205" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.305247" y="-19.231049" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f008" visualVariation="0" animationOffset="0.388708" >
+        <Position x="-1.772331" y="-13.361320" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-3.745738" y="-11.996909" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m009" visualVariation="1" animationOffset="0.929800" >
+        <Position x="-1.339162" y="-18.118125" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.853478" y="-18.991275" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f015" visualVariation="0" animationOffset="0.061874" >
+        <Position x="1.734287" y="-14.527176" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="3.271110" y="-16.068271" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f003" visualVariation="1" animationOffset="0.837907" >
+        <Position x="-2.005187" y="-17.311587" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-3.846752" y="-17.155255" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m004" visualVariation="2" animationOffset="0.252118" >
+        <Position x="2.333777" y="-16.927035" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.816138" y="-18.334612" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" visualVariation="2" animationOffset="0.224193" >
+        <Position x="1.854697" y="-16.539759" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="3.292117" y="-17.009643" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f011" visualVariation="2" animationOffset="0.592607" >
+        <Position x="-0.458841" y="-12.131482" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.769469" y="-11.432226" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f009" visualVariation="0" animationOffset="0.004143" >
+        <Position x="1.078099" y="-14.529884" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="3.031298" y="-14.438176" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m011" visualVariation="1" animationOffset="0.049646" >
+        <Position x="-1.722464" y="-13.865670" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-3.550731" y="-12.118641" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" visualVariation="1" animationOffset="0.287736" >
+        <Position x="-0.310108" y="-12.665148" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.446435" y="-10.904083" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" visualVariation="0" animationOffset="0.862496" >
+        <Position x="1.413787" y="-17.599742" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.180504" y="-18.092831" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m005" visualVariation="2" animationOffset="0.361882" >
+        <Position x="1.816082" y="-15.170173" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="2.955455" y="-15.724346" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m017" visualVariation="2" animationOffset="0.444244" >
+        <Position x="1.060735" y="-18.119351" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.296231" y="-17.561929" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m007" visualVariation="1" animationOffset="0.247871" >
+        <Position x="-2.929328" y="-14.604631" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-4.757516" y="-16.451816" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m002" visualVariation="0" animationOffset="0.697821" >
+        <Position x="0.546115" y="-13.721166" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.342857" y="-13.001612" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m001" visualVariation="2" animationOffset="0.527691" >
+        <Position x="1.212820" y="-13.082523" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="3.113344" y="-13.361696" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m013" visualVariation="0" animationOffset="0.939841" >
+        <Position x="0.212786" y="-17.849665" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.993859" y="-16.124626" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f017" visualVariation="1" animationOffset="0.962008" >
+        <Position x="-0.101530" y="-18.415532" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.894140" y="-19.811465" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f006" visualVariation="1" animationOffset="0.030871" >
+        <Position x="-1.075997" y="-15.577156" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.379289" y="-15.033072" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f005" visualVariation="2" animationOffset="0.522283" >
+        <Position x="0.737763" y="-12.681420" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.352107" y="-10.761132" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f004" visualVariation="0" animationOffset="0.633108" >
+        <Position x="-2.731108" y="-15.285497" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.868143" y="-16.511297" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m008" visualVariation="0" animationOffset="0.982462" >
+        <Position x="-0.350838" y="-17.767812" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.078303" y="-19.348422" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m015" visualVariation="1" animationOffset="0.371809" >
+        <Position x="-1.825474" y="-17.897749" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.144119" y="-17.870793" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m016" visualVariation="0" animationOffset="0.089358" >
+        <Position x="1.193065" y="-12.142803" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.209077" y="-13.701678" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f007" visualVariation="2" animationOffset="0.782887" >
+        <Position x="0.508703" y="-18.545860" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.623419" y="-18.399745" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f002" visualVariation="1" animationOffset="0.189666" >
+        <Position x="-1.890220" y="-18.846329" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-3.110054" y="-17.626612" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f020" visualVariation="2" animationOffset="0.088858" >
+        <Position x="1.137593" y="-13.774133" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.595423" y="-12.955557" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f001" visualVariation="2" animationOffset="0.403601" >
+        <Position x="0.477567" y="-12.111681" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="2.178628" y="-10.922278" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" visualVariation="1" animationOffset="0.042968" >
+        <Position x="-2.468558" y="-18.047285" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-4.020072" y="-16.210068" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m006" visualVariation="1" animationOffset="0.933151" >
+        <Position x="0.903738" y="-18.994972" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.412347" y="-20.745973" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f013" visualVariation="0" animationOffset="0.126075" >
+        <Position x="-0.867491" y="-18.346499" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.918357" y="-18.882488" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m012" visualVariation="1" animationOffset="0.773336" >
+        <Position x="-2.577050" y="-18.643883" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.686898" y="-17.736283" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m010" visualVariation="0" animationOffset="0.823623" >
+        <Position x="-1.546828" y="-14.965163" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.000656" y="-16.614032" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m003" visualVariation="1" animationOffset="0.470990" >
+        <Position x="-2.324128" y="-12.282554" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-4.025710" y="-12.888996" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f016" visualVariation="0" animationOffset="0.573897" >
+        <Position x="0.189453" y="-12.592442" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.301613" y="-11.460801" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m014" visualVariation="2" animationOffset="0.353452" >
+        <Position x="-2.687567" y="-16.816738" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.936021" y="-17.586946" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" visualVariation="1" animationOffset="0.129250" >
+        <Position x="-1.044028" y="-18.940244" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.644955" y="-19.764295" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f014" visualVariation="2" animationOffset="0.077206" >
+        <Position x="2.328535" y="-14.821664" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="2.871170" y="-16.807897" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m010" visualVariation="2" animationOffset="0.483907" >
+        <Position x="-2.441229" y="-12.840816" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.158071" y="-13.067270" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f013" visualVariation="2" animationOffset="0.766201" >
+        <Position x="0.231739" y="-15.880531" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.843918" y="-15.302662" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m005" visualVariation="0" animationOffset="0.843973" >
+        <Position x="-2.238341" y="-15.618531" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.524553" y="-16.723780" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m007" visualVariation="0" animationOffset="0.861811" >
+        <Position x="-2.346495" y="-13.779500" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-3.900596" y="-14.284817" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f014" visualVariation="1" animationOffset="0.412482" >
+        <Position x="1.703487" y="-13.211085" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.742251" y="-13.907654" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f006" visualVariation="1" animationOffset="0.214196" >
+        <Position x="2.425866" y="-15.427754" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="3.207621" y="-13.481120" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m008" visualVariation="0" animationOffset="0.514426" >
+        <Position x="-0.181715" y="-18.919120" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.247736" y="-17.722127" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f002" visualVariation="2" animationOffset="0.109382" >
+        <Position x="2.340546" y="-17.613806" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.525408" y="-17.904451" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f019" visualVariation="1" animationOffset="0.390634" >
+        <Position x="1.340465" y="-16.153113" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-0.364729" y="-15.799303" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m016" visualVariation="1" animationOffset="0.360172" >
+        <Position x="-2.899259" y="-12.047894" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-3.399281" y="-12.761297" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f018" visualVariation="1" animationOffset="0.469397" >
+        <Position x="-2.964451" y="-13.226658" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.383243" y="-11.999516" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m002" visualVariation="1" animationOffset="0.268876" >
+        <Position x="1.478798" y="-18.686695" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.519724" y="-17.970693" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f011" visualVariation="1" animationOffset="0.360740" >
+        <Position x="-2.858498" y="-15.824000" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.316566" y="-15.212557" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f008" visualVariation="0" animationOffset="0.869159" >
+        <Position x="-2.874926" y="-13.884437" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-3.758133" y="-12.515063" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f016" visualVariation="1" animationOffset="0.341310" >
+        <Position x="-2.045645" y="-18.370543" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.975137" y="-18.404220" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f005" visualVariation="0" animationOffset="0.955939" >
+        <Position x="0.714499" y="-17.661752" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.938756" y="-18.570330" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m018" visualVariation="2" animationOffset="0.222469" >
+        <Position x="1.808103" y="-18.303639" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.528348" y="-16.574219" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f012" visualVariation="2" animationOffset="0.999938" >
+        <Position x="-2.471372" y="-14.276768" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.070476" y="-13.420287" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m013" visualVariation="1" animationOffset="0.642617" >
+        <Position x="2.212340" y="-18.627415" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="3.365255" y="-17.581498" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m012" visualVariation="2" animationOffset="0.394066" >
+        <Position x="1.909272" y="-12.685988" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="2.476607" y="-12.544838" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m019" visualVariation="1" animationOffset="0.843641" >
+        <Position x="2.077084" y="-12.059948" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="1.891718" y="-11.817224" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f007" visualVariation="2" animationOffset="0.474404" >
+        <Position x="1.668060" y="-13.804151" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="0.222662" y="-13.781739" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f001" visualVariation="0" animationOffset="0.519319" >
+        <Position x="2.469559" y="-12.708180" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="2.550507" y="-11.956761" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m020" visualVariation="1" animationOffset="0.133167" >
+        <Position x="-2.993471" y="-12.657781" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-2.703387" y="-14.193602" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="f004" visualVariation="0" animationOffset="0.154171" >
+        <Position x="-0.883143" y="-17.033917" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.354653" y="-18.943036" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+    <agent>
+      <TrialRegularAgent mesh="m011" visualVariation="2" animationOffset="0.236432" >
+        <Position x="-2.965846" y="-18.327465" z="0.000000" />
+        <Rotation x="0.000000" y="0.000000" z="0.000000" />
+      <controlLaw>
+          <LawStanding>
+            <LookAt x="-1.783216" y="-16.364662" z="0.000000" />
+          </LawStanding>
+      </controlLaw>
+      </TrialRegularAgent>
+    </agent>
+  </agents>
+</Trial>
